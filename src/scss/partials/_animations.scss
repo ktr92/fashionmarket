@@ -1,0 +1,156 @@
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-60px)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes slideme {
+  0% { left: -30px; margin-left: 0px; }
+  30% { left: 110%; margin-left: 80px; }
+  100% { left: 110%; margin-left: 80px; } 
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  
+  }
+
+  to {
+    opacity: 1;
+ 
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in-bottom {
+  -webkit-animation: fadeInUp .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: fadeInUp .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 1.2s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-right 1.2s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.slide-in-left {
+  -webkit-animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+.fade-in {
+  -webkit-animation: fade-in 1.5s linear 0.5s both;
+  animation: fade-in 1.5s linear 0.5s both
+}
+.fade-in1 {
+  -webkit-animation: fade-in 1.5s linear 1s both;
+  animation: fade-in 1.5s linear 1s both
+}
+.fade-in2 {
+  -webkit-animation: fade-in 1.5s linear 1.5s both;
+  animation: fade-in 1.5s linear 1.5s both
+}
+.fade-in3 {
+  -webkit-animation: fade-in 1.5s linear 2s both;
+  animation: fade-in 1.5s linear 2s both
+}
+.fade-in4 {
+  -webkit-animation: fade-in 1.5s linear 2.5s both;
+  animation: fade-in 1.5s linear 2.5s both
+}
