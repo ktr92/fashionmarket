@@ -539,14 +539,21 @@ color: #2e333e;
   flex: 1;;
 }
 .services__item {
-  flex: 1;;
+  flex: 1;
 }
 .services__wrapper {
 }
 .services__image {
   min-height: 249px;
   margin-bottom: 15px;
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
   img {
+    transition: all 0.5s ease;
     height: 249px;
     object-fit: cover;
     object-position: center;
@@ -843,3 +850,73 @@ a.bordered {
     color: rgba(46, 51, 62, 0.4);
   }
 }
+
+.modal .pagetext {
+  max-height: 600px;
+  overflow: auto;
+}
+
+[data-menutoggle] {
+  display: block;
+  margin-left: 15px;
+}
+
+[data-menutoggle] span {
+  width: 30px;
+  height: 2px;
+  margin-bottom: 6px;
+  display: block;
+  background: #324064;
+  transform-origin: 4px 0px;
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+[data-menutoggle] span:first-child {
+  transform-origin: 0% 0%;
+}
+
+[data-menutoggle] span:last-child {
+  transform-origin: 0% 100%;
+}
+
+[data-menutoggle].active span:first-child {
+  opacity: 1;
+  transform: translate(0, 18px) rotate(-45deg);
+}
+
+[data-menutoggle].active span:last-child {
+  transform: translate(0, -19px) rotate(45deg);
+}
+
+[data-menutoggle].active span:nth-child(2) {
+  opacity: 0;
+}
+[data-menu] {
+  display: none;
+}
+[data-menu].active {
+  display: block;
+}
+
+
+.jsbackdrop {
+  background: rgba(52, 60, 75, 0.22);
+  display: none;
+  position: fixed;
+  z-index: 9;
+  height: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.jsbackdrop.active {
+  display: block;
+}
+

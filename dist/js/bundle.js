@@ -48,6 +48,19 @@ function closeByClickOutside(element, button) {
 $(document).ready(function () {
   new WOW().init();
 
+  $("[data-menutoggle]").on("click", function (e) {
+    e.preventDefault();
+    let menu = $(this).data("menutoggle");
+    $(`[data-menu=${menu}]`).toggleClass("active");
+    $(this).toggleClass("active");
+    $(".jsbackdrop").toggleClass("active");
+  });
+  $(".jsbackdrop").on("click", function (e) {
+    $(this).removeClass("active");
+    $("[data-menu]").removeClass("active");
+    $("[data-menutoggle]").removeClass("active");
+  });
+
   
 var statsStart = (function () {
   var executed = false

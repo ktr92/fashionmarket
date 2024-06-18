@@ -21,15 +21,18 @@
           </div><!-- /.container -->
         </div><!-- /.mainblock -->
 
-        <div class="mainbanner">
+        <div class="mainbanner onlyDesktop">
           <img src="img/mainbanner.jpg" alt="">
+        </div><!-- /.mainbanner -->
+        <div class="mainbanner onlyMobile">
+          <img src="img/mb.jpg" alt="">
         </div><!-- /.mainbanner -->
 
 
-        <div class="aboutblock">
+        <div class="aboutblock" id='about'>
           <div class="container">
             <div class="aboutblock__title">
-              <h2 class='titlecustom'>Наши преимущества</h2>
+              <h2 class="titlecustom fadeInUpSmall wow" data-wow-delay=".1s">Наши преимущества</h2>
             </div><!-- /.aboutblock__title -->
             <div class="aboutblock__text">"Фешн Маркет" предлагает полный комплекс услуг по доставке одежды из Европы и
               Азии. Многолетний опыт и обширные связи в таможенной и транспортной сфере позволяют нам эффективно решать
@@ -74,11 +77,11 @@
 
         <div class="geomap">
           <div class="container">
-            <div class="titlecustom">
+            <div class="titlecustom fadeInUpSmall wow" data-wow-delay=".1s">
               <span class="orange">"Фешн Маркет"</span> — это логистика без границ.
             </div><!-- /.customtitle -->
             <div class="geomap__wrapper">
-              <div class="geomap__map"><img src="img/geomap.png" alt=""></div><!-- /.geomap__map -->
+              <div class="geomap__map "><img src="img/geomap.png" alt=""></div><!-- /.geomap__map -->
               <div class="geomap__info">
                 <div class="geoinfo">
                   <div class="geoinfo__icon">
@@ -93,9 +96,9 @@
           </div><!-- /.container -->
         </div><!-- /.geomap -->
 
-        <div class="services">
+        <div class="services" id='services'>
           <div class="container">
-            <div class="titlecustom">
+            <div class="titlecustom fadeInUpSmall wow" data-wow-delay=".1s">
               <h2>Услуги </h2>
             </div><!-- /.services__titlecustom -->
             <div class="services__items">
@@ -174,11 +177,20 @@
           <div class="container">
             <div class="formblock__wrapper">
               <div class="formblock__image">
-                <img src="img/fromblock.png" alt="">
+                <div class="formblock__mb">
+                  <div class='formblock__mblock'>
+                    <div class="formblock__title onlyMobile">Оформить заявку</div><!-- /.formblock__title -->
+                    <div class="formblock__text onlyMobile">Если у вас есть вопросы или предложения, мы будем рады с вами их обсудить. </div><!-- /.formblock__text -->
+                  </div>
+                 
+                  <img src="img/fromblock.png" alt="" class='onlyDesktop'>
+                  <img src="img/fb.png" alt="" class='onlyMobile'>
+
+                </div><!-- /.formblock__mb -->
               </div><!-- /.formblock__image -->
               <div class="formblock__main">
-                <div class="formblock__title">Оформить заявку</div><!-- /.formblock__title -->
-                <div class="formblock__text">Если у вас есть вопросы или предложения, мы будем рады с вами их обсудить. </div><!-- /.formblock__text -->
+                <div class="formblock__title onlyDesktop">Оформить заявку</div><!-- /.formblock__title -->
+                <div class="formblock__text onlyDesktop">Если у вас есть вопросы или предложения, мы будем рады с вами их обсудить. </div><!-- /.formblock__text -->
                 <div class="formblock__form">
                   <form action="">
                     <div class="formblock__row">
@@ -199,12 +211,12 @@
           </div><!-- /.container -->
         </div><!-- /.formblock -->
 
-        <div class="contactsblock">
+        <div class="contactsblock" id='contact'>
           <div class="container">
             <div class="contactsblock__wrapper">
               <div class="contactsblock__main">
                 <div class="contactsblock__title">
-                  <div class="titlecustom">
+                  <div class="titlecustom fadeInUpSmall wow" data-wow-delay=".1s">
                     <h2>Контакты</h2>
                   </div><!-- /.titlecustom -->
                 </div><!-- /.contactsblock__title -->
